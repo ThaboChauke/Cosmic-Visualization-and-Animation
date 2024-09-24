@@ -10,7 +10,7 @@ body {
     margin: 0;
     /* overflow: hidden; */
 }
-#galaxy #black-hole {
+#galaxy #black-hole #starfield {
     display: block;
 }
 
@@ -92,7 +92,12 @@ body {
 }
 
 /* Black hole */
-
 .black-hole {
     margin: 0;
+}
+
+/* Starfield */
+.starfield #starfield-html {
+    margin: 0;
+    padding: 0;
 }
