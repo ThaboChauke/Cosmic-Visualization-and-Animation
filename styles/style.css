@@ -5,7 +5,7 @@ body {
 
 
 /* Galaxy */
-.galaxy { /* body */
+.galaxy .black-hole .constellation { /* body */
     /* background: black; */
     margin: 0;
     /* overflow: hidden; */
@@ -91,10 +91,7 @@ body {
     }
 }
 
-/* Black hole */
-.black-hole {
-    margin: 0;
-}
+
 
 /* Starfield */
 .starfield #starfield-html {
