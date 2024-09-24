@@ -5,11 +5,10 @@ body {
 
 
 /* Galaxy */
-.galaxy .black-hole .constellation { /* body */
-    /* background: black; */
+.galaxy .black-hole .constellation {
     margin: 0;
-    /* overflow: hidden; */
 }
+
 #galaxy #black-hole #starfield {
     display: block;
 }
@@ -17,12 +16,10 @@ body {
 
 /* SupaNova */
 .supanova { /* body */
-    /* background-color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* overflow: hidden; */
     position: relative;
 }
 
@@ -90,7 +87,6 @@ body {
         opacity: 0;
     }
 }
-
 
 
 /* Starfield */
