@@ -3,17 +3,19 @@ body {
     overflow: hidden;
 }
 
+
+/* Galaxy */
 .galaxy { /* body */
     /* background: black; */
     margin: 0;
     /* overflow: hidden; */
 }
-#galaxy {
+#galaxy #black-hole {
     display: block;
 }
 
-/* SupaNova */
 
+/* SupaNova */
 .supanova { /* body */
     /* background-color: black; */
     display: flex;
@@ -87,4 +89,10 @@ body {
         transform: scale(5);
         opacity: 0;
     }
+}
+
+/* Black hole */
+
+.black-hole {
+    margin: 0;
 }
