@@ -5,12 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Constellation Viewer</title>
         <link rel="stylesheet" href="styles/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     </head>
     <body class="constellation">
+        <div id="mySidenav" class="sidenav">
+        
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Constellation</a>
+            <a href="#">Galaxy</a>
+            <a href="#">StarField</a>
+            <a href="#">SupaNova</a>
+          </div>
+          
+          <span id="open-nav" onclick="openNav()"><i class='bx bx-menu-alt-left'></i></span>
         <canvas id="constellation"></canvas>
+        <script src="scripts/script.js"></script>
         <script src="scripts/constellation.js"></script>
     </body>
 </html>
