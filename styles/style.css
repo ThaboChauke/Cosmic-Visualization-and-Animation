@@ -1,8 +1,90 @@
-.galaxy {
-    margin: 0;
-    overflow: hidden;
+body {
     background: black;
+    overflow: hidden;
 }
-canvas {
+
+.galaxy { /* body */
+    /* background: black; */
+    margin: 0;
+    /* overflow: hidden; */
+}
+#galaxy {
     display: block;
+}
+
+/* SupaNova */
+
+.supanova { /* body */
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.starry-background div {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.starry-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 0;
+}
+
+.explosion {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 255, 0, 0) 30%, rgba(255, 0, 0, 0.7) 70%, rgba(255, 255, 0, 0) 100%);
+    border-radius: 50%;
+    animation: explode 1s forwards;
+    display: none;
+}
+
+.star {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 20px yellow;
+    animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
 }
