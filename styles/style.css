@@ -1,3 +1,7 @@
+/* --------------------------------------------------
+   General Styles
+-------------------------------------------------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
 
 body {
@@ -5,6 +9,10 @@ body {
     background: black;
     overflow: hidden;
 }
+
+/* --------------------------------------------------
+   Home Page Styles
+-------------------------------------------------- */
 
 .home-page {
     display: flex;
@@ -16,11 +24,14 @@ body {
 }
 
 .main {
-    /* border: 1px solid #0056b3; */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
+
+/* --------------------------------------------------
+   Link Styles
+-------------------------------------------------- */
 
 .container {
     display: flex;
@@ -39,6 +50,10 @@ body {
     color: #0056b3; 
 }
 
+/* --------------------------------------------------
+   Title and Navigation Styles
+-------------------------------------------------- */
+
 #title {
     color: #007BFF;
     font-size: 36px;
@@ -49,52 +64,58 @@ body {
     color: wheat;
 }
 
+/* --------------------------------------------------
+   Side Navigation (sidenav) Styles
+-------------------------------------------------- */
+
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1; 
+    top: 0;
     left: 0;
-    background-color: #0ee7dc; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  .sidenav a {
+    background-color: #0ee7dc;
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
+}
+
+.sidenav a:hover {
     color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
+}
+
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  
-  #main {
+}
+
+#main {
     transition: margin-left .5s;
     padding: 20px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+}
 
-  
-/* Galaxy */
+@media screen and (max-height: 450px) {
+    .sidenav { padding-top: 15px; }
+    .sidenav a { font-size: 18px; }
+}
+
+/* --------------------------------------------------
+   Galaxy Simulation Styles
+-------------------------------------------------- */
+
 .galaxy .black-hole .constellation {
     margin: 0;
 }
@@ -103,9 +124,11 @@ body {
     display: block;
 }
 
+/* --------------------------------------------------
+   Supernova Simulation Styles
+-------------------------------------------------- */
 
-/* SupaNova */
-.supanova { /* body */
+.supanova {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,6 +173,9 @@ body {
     animation: pulse 2s infinite;
 }
 
+/* --------------------------------------------------
+   Animations
+-------------------------------------------------- */
 
 @keyframes pulse {
     0% {
@@ -166,7 +192,6 @@ body {
     }
 }
 
-
 @keyframes explode {
     0% {
         transform: scale(1);
@@ -178,8 +203,10 @@ body {
     }
 }
 
+/* --------------------------------------------------
+   Starfield Styles
+-------------------------------------------------- */
 
-/* Starfield */
 .starfield #starfield-html {
     margin: 0;
     padding: 0;
