@@ -75,7 +75,8 @@ body {
     z-index: 1; 
     top: 0;
     left: 0;
-    background-color: #0ee7dc;
+    background: rgb(23, 20, 68);
+    background: linear-gradient(90deg,  rgba(0,212,255,1) 0%, rgba(9,9,121,1) 65%,rgba(2,0,36,1) 100%);
     overflow-x: hidden;
     padding-top: 60px; 
     transition: 0.5s;
@@ -85,7 +86,7 @@ body {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: wheat;
     display: block;
     transition: 0.3s;
 }
