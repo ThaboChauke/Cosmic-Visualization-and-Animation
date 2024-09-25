@@ -16,6 +16,7 @@ body {
 
 .home-page {
     display: flex;
+    background: linear-gradient(90deg,  rgba(0,212,255,1) 0%, rgba(9,9,121,1) 65%,rgba(2,0,36,1) 100%);
     flex-direction: column;
     justify-content: center;
     align-items: center; 
@@ -47,12 +48,12 @@ body {
 .container a {
     margin: 10px 0; 
     text-decoration: none;
-    color: #007BFF;
+    color: #051180;
     font-size: 18px;
 }
 
 .container a:hover {
-    color: #0056b3; 
+    color: #00b3a4; 
 }
 
 /* --------------------------------------------------
@@ -60,7 +61,7 @@ body {
 -------------------------------------------------- */
 
 #title {
-    color: #007BFF;
+    color: #b0d3f859;
     font-size: 36px;
     margin-bottom: 20px;
 }

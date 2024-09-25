@@ -8,6 +8,29 @@
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <style>
+            /* Additional styles for stars */
+            body {
+                margin: 0;
+                overflow: hidden;
+                background-color: black;
+            }
+            
+            .star {
+                position: absolute;
+                width: 2px;
+                height: 2px;
+                background-color: white;
+                border-radius: 50%;
+            }
+
+            /* Optional: Style for footer to be more visible */
+            .footer {
+                color: white;
+                text-align: center;
+                margin-top: 20px;
+            }
+        </style>
     </head>
     <body class="home-page">
         <div class="main">
@@ -22,10 +45,31 @@
                 <a href="starfield.html" target="_blank">StarField</a>
             </div>
         </div>
+
+        <footer>
+            <div class="footer">
+                <p>*The experience is better with background music</p>
+            </div>
+        </footer>
+
+        <!-- Script to generate random stars -->
+        <script>
+            function generateStars(numStars) {
+                for (let i = 0; i < numStars; i++) {
+                    const star = document.createElement('div');
+                    star.classList.add('star');
+
+                    const x = Math.random() * window.innerWidth;
+                    const y = Math.random() * window.innerHeight;
+
+                    star.style.left = `${x}px`;
+                    star.style.top = `${y}px`;
+
+                    document.body.appendChild(star);
+                }
+            }
+
+            generateStars(200); // Adjust the number of stars as needed
+        </script>
     </body>
-    <footer>
-        <div class="footer">
-            <p>*The experience is better with background music</p>
-        </div>
-    </footer>
 </html>
